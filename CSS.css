@@ -1,0 +1,137 @@
+body{
+  background-color: rgb(242, 242, 242);
+    background-image: url(pexels-pixabay-34514.jpg) ;
+    background-size: cover;
+    backdrop-filter: blur(3px) ;
+    -webkit-backdrop-filter: blur();
+    /*If i use following sytax :
+    opacity:30 %; whole text and elements will get transparent*/
+}
+h1 {
+   padding-top: 5px;
+    color: rgb(47, 92, 92);
+    background-color: antiquewhite;
+    font-size: 120px;
+   -webkit-text-stroke: #fcfbf3;
+   -webkit-text-stroke-width: 1px;
+    margin-top: 1px;
+   margin-bottom: 5px;
+   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(blueGradient.jpg);
+    background-size:cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-position: center;
+}
+
+input {
+    color: blueviolet;
+
+}
+
+#first {
+   font-size: 15px;
+    color: coral;
+}
+
+#mail {
+    border-radius: 20px;
+    background-color:#8ac1fc;
+}
+#pw {
+   border-style:double;
+   border-radius: 20px;
+    background-color:#8ac1fc;
+
+}
+
+button {
+    height: 32px ;
+    width: 193px;
+    color:rgb(2, 38, 38);
+    background-color: rgb(249, 171, 202);
+ border-radius: 50px;
+    font-size: 21px ;
+     font-style: Helvetica, sans-serif;;
+}
+
+ h2 { 
+   
+    padding: 10px;
+    background-color: rgb(255, 238, 242);
+    border-style:double;
+    border: 13px solid #6c9bf2;
+    border-radius: 20px;
+    margin-bottom: 17px 
+   }
+
+
+.run {
+    background-image: url("pexels-pixabay-34514.jpg");
+    background-size: cover;
+    background-position: center;
+    image-resolution: 500px * 400px;
+}
+
+div {
+    color: white;
+}
+#lastdate {
+    font-size: 30px;
+    font-style:oblique;
+    font-weight: 1000;
+    font-stretch:condensed;
+    font-display:  #4d6288; 
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+section {
+    background-color: burlywood;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 10px 12px 17px 18px;
+    border: 40px #4d6288;
+    border-radius: 2%; 
+    transform:margin-left 5s;
+    } /*defines curves of border on edges*, so if i do 100 %, it becomes 
+    CIRCULAR/*/
+
+/* font size in piexels, text decoration underline wavy
+FONT - FAMILY changes font,*/
+ section:hover {
+    border-radius: 20%;
+    margin-left: 200px;
+ }
+ section:nth-of-type(1)
+ {
+    transition-timing-function: ease-in;
+ }
+
+.circle {
+    width :50px;                           
+    height: 50px;
+    background-color: #c1f506;
+   /* border-radius: 50%;*/
+   transition: 1s;
+}
+    
+
+.circle:hover { /*changes colour by tapping*/
+    background-color: #4d6288;
+    border-radius: 50%; 
+}
+
+/* for a simple circle 
+.circle 
+   {
+    width :50px;
+    height: 50px;
+    background-color: #c1f506;
+    border-radius: 50%; 
+   }  */
+
