@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration_Race</title> 
+    <body>
+    <script src="firstJs_code.js"></script>
+    
+    <link rel="stylesheet" href="CSS.css">
+    
+    <form action="/yak">
+      <h1> Race Registration! </h1>
+      <label for="lastdate" id="lastdate"> Last date - 19-07-2023! </label>
+     <section> <div>hi</div></section>
+     <section>helo</section>
+     <section>oks</section>
+  
+        <h2>Apply Today!</h2>
+        <div>
+        <lable for="First">First name</lable> 
+        <input type="text" id="first" name="firstname" placeholder="enter name here">
+        <label for="last">Last name</label>
+          <input type="text" id="last" name=" lastname" placeholder="last name here"> <br> <br>
+          <label>Email id</label>
+          <input type="email" placeholder="enter your email"> <br> <br>
+          <label>Password</label> 
+          <input type="password" placeholder="password"> <br> <br>
+          <label>Re-enter password</label>
+          <input type ="password" placeholder="Re-enter your password">
+
+          <div class="circle"></div>
+      </div>
+      
+      <div>
+      <p>Select a race :</p>
+  
+   <input type="radio" name="race" id="funrun5k" value="fun" >
+   <!--value attribute in the input are as. helps in giving a value when the form is submitted for each radio button-->
+   <label for="funrun5k">Fun Run 5k</label> 
+</div>
+<div>
+   <input type="radio" name="race" id="hlfmar" value="half">
+   <label for="hlfmar">Full marathon</label> 
+</div>
+<div>
+   <input type="radio" name="race" id="fullmar" value="full">
+   <label for="fullmar">half marathon</label>
+</div> 
+   <div>
+     <br>
+    <label for="mail">Email</label>
+   <input type="email" id=mail> 
+   <label for="pw">password</label>
+   <input type="password" id="pw">
+   </div>
+   <label=""></label>
+   <div>
+   <br>
+    <label for="division"> Select age group </label>
+    <select name="division" id="division">
+    <option value="kids">18-20</option>
+<option value="kids">20-25</option>
+<option value="kids">26-40</option>   
+</select> 
+</div>
+  <br>
+   <button>Register!</button>
+   <br>
+    </form>
+<hr>
+
+    </body>
+   
+  <footer>
+    <span>
+    <a href="https://www.w3schools.com/tags/tag_label.asp"> home </a><br>
+    <a href= "https://www.w3schools.com/tags/tag_label.asp"> Contact </a><br>
+    <a href= "https://www.w3schools.com/tags/tag_label.asp"> Help </a><br>
+
+
+    <p>
+      #include <bits/stdc++.h>
+using namespace std; <br>
+
+int lowerBound(vector<int> arr, int n, int x) { <br>
+    int low = 0, high = n - 1;<br>
+    int ans = n;<br>
+
+    while (low <= high) {<br>
+        int mid = (low + high) / 2;<br>
+        // maybe an answer<br>
+        if (arr[mid] >= x) {<br>
+            ans = mid;<br>
+            //look for smaller index on the left<br>
+            high = mid - 1;<br>
+        }
+        else {<br>
+            low = mid + 1; // look on the right
+        }<br>
+    }
+    return ans;<br>
+}
+
+int main()<br>
+{
+    vector<int> arr = {3, 5, 8, 15, 19};<br>
+            //index = 0, 1, 2,  3,  4<br>
+    int n = 5, x = 2;<br>
+    int ind = lowerBound(arr, n, x);<br>
+    cout << "The lower bound is the index: " << ind << "\n";<br>
+    return 0;<br>
+}
+    </p>
+  
+  </span>
+  </footer>
+
+    </html>
